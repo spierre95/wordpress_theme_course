@@ -1,4 +1,5 @@
 .htaccess
-wp-config.php
 node_modules/
 .vscode
+wp-config.php
+wp-config-sample.php
