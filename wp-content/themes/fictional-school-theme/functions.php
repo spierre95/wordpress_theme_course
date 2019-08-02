@@ -11,5 +11,12 @@ function load_scripts() {
     wp_enqueue_script('main_js', get_theme_file_uri('/js/scripts-bundled.js'), null, microtime(), true);
 }
 
+function load_features() {
+    //adds custom title for each page in word press;
+    add_theme_support('title-tag');
+}
+
+
 add_action('wp_enqueue_scripts', 'load_styles');
 add_action('wp_enqueue_scripts', 'load_scripts');
+add_action('after_setup_theme', 'load_features');
