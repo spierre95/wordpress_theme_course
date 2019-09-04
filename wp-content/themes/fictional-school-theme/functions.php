@@ -14,6 +14,13 @@ function load_scripts() {
 function load_features() {
     //adds custom title for each page in word press;
     add_theme_support('title-tag');
+
+    // adds dynamic menu options in theme
+    // register_nav_menus([
+    //     'headerMenuLocation' => 'Header Menu Location',
+    //     'footerLocationOne' => 'Footer Location One',
+    //     'footerLocationTwo' => 'Footer Location Two'
+    // ]);
 }
 
 
